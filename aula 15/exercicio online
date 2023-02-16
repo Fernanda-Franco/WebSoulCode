@@ -1,0 +1,12 @@
+// exercicio 1
+let peso = 75
+let altura = 1.60
+let IMC = "peso / (altura * altura)"
+console.log(" Meu IMC é " + peso / (altura * altura))
+
+//exercicio 2
+let R = 5
+let PI = 3.14
+let area = PI * R * R 
+console.log(PI * R * R)
+
