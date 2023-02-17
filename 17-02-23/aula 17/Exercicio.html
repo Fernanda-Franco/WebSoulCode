@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <title>Exercicio HTML</title>
+</head>
+<body>
+    <head>
+        <section style="width: 500%; border: 2px solid gray">
+        <h1><dt>Minha Empresa</dt></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Empresa Azul</a></li>
+                <li><a href="#">Empresa Amarela</a></li>
+                <li><a href="#">Empresa Roxa</a></li>
+                <li><a href="#">Empresa Marrom</a></li>
+                <li><a href="#">Empresa Verde</a></li>
+                <li><a href="#">Empresa Vermelha</a></li>
+                <li><a href="#">Empresa Laranja</a></li>
+            </ul>
+        </nav>
+        </section>
+    </head>
+    <main>
+        <section>
+            <h2><dt>Contato</dt></h2>
+            <p>Entre em contato conosco através do formulário abaixo ou pelos meios de contato listados na tabela</p>
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                <label for="cName">Nome:</label>
+                <input 
+                required type="text" 
+                id="cName" 
+                name="nome" 
+                minlength="1" 
+                maxlength="70" size="30" 
+                placeholder="Digite aqui"><br>
+                
+                <label for="cSenha">Senha:</label>
+                <input 
+                required type="password" 
+                id="cSenha" 
+                name="senha"  
+                placeholder="Digite aqui"><br>
+                
+                <label for="cEmail">Email:</label>
+                <input 
+                required type="Email" 
+                id="cEmail" 
+                name="Email" 
+                placeholder="ex: contato@gmail.com"><br>
+                
+                <label for="cTel">Tel:</label>
+                <input 
+                required type="tel" 
+                id="cTel" 
+                name="telefone" 
+                placeholder="(xx) 9.xxxx-xxxx"><br>
+                
+                <label for="cInstagram">Instagram:</label>
+                <input 
+                required type="text" 
+                id="cInstagram"
+                name="instagran" 
+                placeholder="Digite aqui"><br>
+                
+                <label for="cIdade">Idade:</label>
+                <input 
+                required type="idade" 
+                id="cIdade"
+                name="idade" 
+                min="0" 
+                max="110"><br>
+                
+                <label for="cCurriculo">Curriculo:</label>
+                <input 
+                required type="file" 
+                id="cCurriculo"
+                name="Curriculo"><br> <!--caixa de assinalar-->
+        
+                </fieldset>
+        
+                <fieldset>
+                
+                Como podemos te ajudar?:<br>
+                <textarea cols="40" placeholder="Digite aqui"></textarea><br><!--cols: limita o tamanho da cx de texto-->
+                
+                </fieldset>        
+                </select>
+            </form>
+        </section>
+        <section style="width: 500%; border: 2px solid gray">
+            <nav>
+            <h2>Informações das Empresas</h2>
+            <table border="1">
+                <thead>
+            <colgroup>
+                <col style="width: 150pix;">
+                <col style="width: 150pix;">
+                <col style="width: 150pix;">
+                <col style="width: 150pix;">
+            </colgroup>
+            <tr>
+                <th>Empresa</th>
+                <th>Ingles</th>
+                <th>Ramo</th>
+                <th>Vagas</th>
+                <th>Contato</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Empresa Azul</td>
+                <td>Precisa</td>
+                <td>Agricola</td>
+                <td>Diretor</td>
+                <td>lidia@agricula.com</td>
+            </tr>
+            <tr>
+                <td>Empresa Amarela</td>
+                <td>Não Precisa</td>
+                <td>Varejo</td>
+                <td>Vendedor</td>
+                <td>marcos@varejo.com</td>
+            </tr>
+            <tr>
+                <td>Empresa Roxa</td>
+                <td>Precisa</td>
+                <td>Engenharia</td>
+                <td>Analista</td>
+                <td>luiz@engenharia.com</td>
+            </tr>
+            <tr>
+                <td>Empresa Marrom</td>
+                <td>Não Precisa</td>
+                <td>Automotivo</td>
+                <td>Tecnico</td>
+                <td>carlos@automotivo.com</td>
+            </tr>
+            <tr>
+                <td>Empresa Verde</td>
+                <td>Precisa</td>
+                <td>Pet</td>
+                <td>Médico Veterinário</td>
+                <td>ana@petshop.com</td>
+            </tr>
+            <tr>
+                <td>Empresa Laranja</td>
+                <td>Precisa</td>
+                <td>Tecnologia</td>
+                <td>Desenvolvedor</td>
+                <td>flavia@tecnologia.com</td>
+            </tr>
+            </tbody>
+            </table>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <h5>&copy; 2023 Minha Empresa. Todos os direitos reservados.</h5>
+    </footer>
+</body>
+</html>
