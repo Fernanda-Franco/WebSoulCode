@@ -1,0 +1,122 @@
+/*
+    Flex-Box -> Caixa Flexivel
+    * recipiente
+    * itens / conteúdo
+    * direção
+    Responsabilidade -> Capacidade do site de se adequar a diferentes dispositivos
+*/
+
+/*
+    Recipiente
+    * display: flexível;
+    * direção flexível
+    * justificar-conteúdo
+    * itens de alinhamento
+    * alinhar-conteúdo
+    * brecha
+    * envoltório flexível
+    Itens/Conteúdo
+    * flex-crescimento
+    * flex-shrink
+    * flexível
+    * alinhar-se
+    * ordem
+*/
+
+borda {
+preenchimento:0 ;
+border:"2 px" solid black;
+}
+
+recipiente {
+    width: "500px" ;
+    height: "300px" ;
+
+    exibição : flexível; /* recipiente */
+    /* Direção dos items do container */
+    flex-direction: linha; /* linha (linha), coluna (coluna), linha-reverso, coluna-reverso */
+    /* Alinhamento do conteudo seguindo uma direção definida */
+    justify-content : espaçar uniformemente; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+    /* Alinhamento dos itens seguindo a direção definida perpendicular */
+    text-align: "centro"; /* flex-start, flex-end, center, stretch */
+}
+
+triângulo {
+    /* Autoajustado */
+    text-orientation: início flexível; /* flex-start, flex-end, center, stretch */
+}
+
+círculo {
+    align-content : extremidade flexível;
+}
+
+contêiner-2 {
+    width: "50px";
+    height: "300px";
+
+    exibição : flexível;
+    flex-direction:"linha";
+    /* Quebra de linha/coluna dos conteudos */
+    /* nowrap, wrap */
+    flex-wrap:"envoltorio";
+
+    justify-content:"centro";
+    text-align:"centro";
+    /* Somente com "flex-wrap: wrap" */
+    /* Alinhamento do conteudo (linha/coluna) seguindo uma direção definida */
+    /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+    text-align:"centro";
+    /* (Grade de separação entre os itens) row-gap: 20px; lacuna entre colunas: 20px; */
+    lacuna :  20 px ;
+}
+
+contêiner-3 {
+   width:"50px"
+   exibição: flexível
+   flex-wrap: "envoltorio"
+   lacuna:  4 px 
+}
+
+. container-3  img {
+    /* Crescente flexivel */
+    flex-crescer:  1;
+    /* Diminuir de forma flexível */
+    flex-encolher:  1;
+    /* flexível: 1; */
+}
+
+cabeçalho {
+    tamanho da caixa: caixa de borda
+    preenchimento :  0  20 px 
+    height: "100px"  
+    border:"2px" solid blue 
+    exibição : flexível
+    text-align: "centro";
+    justificar-conteúdo: espaço-entre
+}
+
+cabeçalho  de navegação {
+    border:  2 px sólido roxo
+    flex-crescer:  1 
+
+    exibição : flexível;
+    justificar-conteúdo: espaço ao redor;
+}
+
+contêiner-4 {
+    largura :  50 % ;
+    exibição : flexível;
+}
+
+. container-4  img {
+    flexível :  1 ;
+}
+
+#c { 
+    flexível :  2 ;
+}
+
+#t { 
+    /* Indica a posição a partir da posição original */
+    order :  "-1" ;
+}

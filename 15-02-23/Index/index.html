@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2 de HTML e CSS</title>
+</head>
+<body>
+    <h2 title=" Título de Imagem "> Imagem </h2>
+        <figura>
+            <img title=" Capa da série Eu a Patroa e as Crianças " largura=" 400px " altura=" 200px "
+                src="./eu-a-patroa-e-as-criancas.jpeg" alt=" Capa da série Eu a Patroa e as Crianças " />
+                <figcaption> Capa da série Eu a Patroa e as Crianças </figcaption>
+        </figura>
+        <h2> Vídeo </h2>
+            <vídeo largura=" 400px " altura=" 200px " src="./abertura-um-maluco-no-pedaco.mp3" controles> </vídeo>
+            <h2> Áudio </h2>
+            <audio src="./abertura-chaves.mp4" controles> </audio>
+            <h/>
+            <br/>
+            <br/>
+            <h2> Listas </h2>
+            <h3> Listas não ordenadas (Lista de Compras) </h3>
+            <!-- Unordered List -> Lista não ordenada -->
+            <!-- List Item -> Item da Lista -->
+            <ul>
+                <li> Farinha de Trigo </li>
+                <li> Leite </li>
+                <li> Ovos </li>
+                <li> Açúcar </li>
+            </ul> 
+            <br/>
+            <h3> Listas ordenadas (Receita de Bolo) </h3>
+            <!-- Ordered List -> Lista ordenada -->
+            <ol> 
+                <li> Misture todos os ingredientes em uma tigela </li>
+                <li> Aqueça o forno em 180° C </li>
+                <li> Coloque a mistura na forma e leve ao forno </li>
+                <li> Espere por 20 minutos e sirva em fatias </li>
+        </ol>
+        <h3> Listas aninhadas </h3>
+        <h4> Lista de Comidas </h4>
+        <ul> 
+            <li> 
+                Café da manhã
+                <ul>
+                    <li> Pão </li>
+                    <li> Ovos cozidos </li>
+                    <li> Café </li>
+                </ul>
+            </li>
+            <li>
+                Almoço
+                <ul>
+                    <li> Arroz </li>
+                    <li> Feijão </li>
+                    <li> Lasanha </li>
+                </ul>
+            </li>
+            <li>
+                lanche
+                <ol>
+                    <li> Bolo </li>
+                    <li> Suco </li>
+                    <li> Café </li>
+                </ol>
+            </li>
+                <li>
+                jantar
+                <ol>
+                    <li> Pizza </li>
+                    <li> Hambúrguer </li>
+                    <li> Refri </li>
+                </ol>
+    </li> 
+    </ul> 
+    <h4> Como lavar as roupas? </h4>
+        <ol>
+            <li>
+                Recolha suas roupas
+                <ol>
+                    <li> Veja nos quartos </li>
+                    <li> Veja na sala </li>
+                    <li> Veja nas escadas </li>
+                    <li> Veja nos banheiros </li>
+    </ol>
+    </li> 
+    <li>
+        Leve à máquina de lavar
+        <ol> 
+            <li> Verifique se há objetos dentro dos bolsos das roupas </li>
+            <li> Separe as roupas coloridas das brancas </li>
+            </ol>
+    </li>
+    </ol>
+    <h3> Listas de descrição </h3>
+    <dl>
+        <dt> HTML </dt>
+        <dd>
+            O HTML (HyperText Markup Language ou Linguagem de marcação de hiper
+            texto) é a linguagem que estrutura os elementos visuais de uma página
+            rede.
+        </dd>
+        <dt> CSS </dt>
+        <dd>
+            CSS (Cascading Style Sheet ou Folhas de Estilo em Cascata) é uma
+            linguagem de estilização utilizada para melhorar a aparência visual de
+            elementos em um documento HTML.
+        </dd>
+    </dl>
+    <!--
+        Atributos específicos (src, href, width, target)
+        Atributos Globais (id, class, title)
+     -->
+    <h> <br> <br> _ _ _ _ _ _
+        <h2> Tabelas </h2>
+        <!-- <tr> -> Linha da tabela -->
+        <!-- <td> -> Dados da tabela -->
+        <!-- <th> -> Cabeçalho da Mesa -->
+        <!-- <thead> -> Cabeçalho da Tabela -->
+        <!-- <tbody> -> Corpo da Tabela -->
+        <!-- <tfoot> -> Rodapé da Tabela -->
+        <borda da tabela=" 1 ">
+            <colgroup>
+                <col style="width:150px"> <!-- Coluna -->
+                    <col style="width: 150px ">
+                        <col style="width: 80px ">
+                            <col style="width: 100px ">
+            </colgroup>
+            <tr>
+                <th> Nome </th>
+                <th> Área </th>
+                <th> Idade </th>
+                <th> Estado </th>
+            </tr>
+            <tr>
+                <td> Gabriel B </td>
+                <td> Pilha completa </td>
+                <td> 21 anos </td>
+                <td rowspan=" 3 "> Ceará </td>
+            </tr>
+            <tr>
+                <td> Almir </td>
+                <td> Pilha completa </td>
+                <td> 23 anos </td>
+            </tr>
+            <tr> 
+                <td> Igor </td>
+                <td> Eng. de dados </td>
+                <td> 30 nos </td>
+            </tr>
+            <tr>
+                <td colspan=" 4 "align="center"> Professores da SoulCode </td>
+            </tr>
+            </tabela>
+            <h3> Times do Brasil </h3>
+            <borda da tabela=" 3 ">
+                <cabeça>
+        <tr>
+            <th> Tempo </th>
+            <th> Pontuação </th>
+            <th> Gols </th>
+            <th> Vitórias </th>
+            </tr>
+            </thead>
+            <corpo> 
+        <tr> 
+            <td> Fluminense </td>
+            <td> 320 </td>
+            <td> 20 </td>
+            <td> 3 </td>
+            </tr>
+        <tr>
+            <td> Flamengo </td>
+            <td> 320 </td>
+            <td> 24 </td>
+            <td> 6 </td>
+            </tr>
+        <tr> 
+            <td> Vasco </td>
+            <td> 200 </td>
+            <td> 30 </td>
+            <td> 6 </td>
+            </tr>
+        <tr> 
+            <td> Corinthians </td>
+            <td> 300 </td>
+            <td> 30 </td>
+            <td> 6 </td>
+            </tr>
+        <tr> 
+            <td> Palmeiras </td>
+            <td> 500 </td>
+            <td> 49 </td>
+            <td> 7 </td>
+            </tr>
+            </tbody> 
+            <pés>
+        <tr> 
+            <td colspan=" 4 "> Times brasileiros </td>
+            </tr>
+            </tfoot> 
+            </tabela>
+        </body>
+            </html>

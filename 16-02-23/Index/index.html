@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Aula HTML e CSS</title>
+</head>
+<body>    
+    <h3 > Cadastro de perfil </h3 >
+    <!-- <form> -> Container do formulário -->
+    <!-- <input>, <textarea>, <select> -> Campos do formulário -->
+    <!-- <label> -> Rotulo de um campo do formulário -->
+    <formulário>
+        <conjunto de campos>
+            <legend > Dados Pessoais </legend >
+            <label  for =" cNome " > Nome: </label >
+            <input  required  type =" text " id =" cNome " name =" nome " placeholder =" Digite seu nome aqui " minlength =" 1 " maxlength =" 70 " size =" 40 " >  <br>
+            <label  for =" cSenha " > Senha: </label >
+            <input  required  type =" password " id =" cSenha " name =" senha " placeholder =" Digite sua senha aqui " >  <br>
+            <label  for =" cEmail " > E-mail: </label >
+            <input  required  type =" email " id =" cEmail " name =" email " placeholder =" Digite seu e-mail aqui " value =" gabriel@mail.com " >  <br>
+            <label  for =" cTelefone " > Telefone: </label >
+            <entrada  necessária  tipo =" tel " id =" cTelefone " nome =" telefone " valor =" 99 99999-9999 " >  <br>
+            <label  for =" cInstagram " > URL do Instagram: </label >
+            <input  type =" url " id =" cInstagram " name =" instagram " >  <br>
+            
+            <label  for =" cIdade " > Idade: </label >
+            <input  type =" number " min =" 0 " max =" 130 " id =" cIdade " name =" idade " value =" 21 " >  <br >            < label  for =" cDataNasc " > Data de Nascimento: </ label >
+            <input  type =" data " min =" 2000-01-01 " max =" 2023-02-16 " id =" cDataNasc " name =" dataNasc " >  <br >
+            <label  for =" cHoraNasc " > Hora de Nascimento: </label >
+            <input  type =" time " id =" cHoraNasc " name =" horaNasc " >  <br >
+            
+            Data e Hora Nascimento:
+            <tipo de entrada  =" datetime-local " desativado > <br > 
+            
+            <label  for =" cAvatar " > Foto de Perfil: </label >
+            <input  type =" file " id =" cAvatar " name =" avatar " accept =" .jpeg,.png " multiple >  <br >
+            
+            <label > Sexo: </label >
+            <input  id =" cSexoMasc " type =" radio " name =" sexo " >
+            <label  for =" cSexoMasc " > Masculino </label >
+            <input  id =" cSexoFem " type =" radio " name =" sexo " >
+            <label  for =" cSexoFem " > Feminino </label >
+        </conjunto de campos >
+        
+        <conjunto de campos >
+            <legenda > Outras Informações </legenda >
+
+            Interesses:
+            <label  for =" cHumanas " > Humanas </label >
+            <input  id =" cHumanas " name =" interesses " type =" checkbox " marcado >
+
+            <label  for =" cExatas " > Exatas </label >
+            <input  id =" cExatas " name =" interesses " type =" checkbox " >
+
+            <label  for =" cLinguagens " > Linguagens </label >
+            <input  id =" cLinguagens " name =" interesses " type =" checkbox " >
+
+            <label  for =" cCiencias " > Ciências </label >
+            <input  id =" cCiencias " name =" interesses " type =" checkbox " >
+            <br >
+            
+            <label  for =" cCor " > Escolha sue cor favorita: </label >
+            <input  type =" color " id =" cCor " name =" cor " >  <br >
+            
+            <label  for =" cInglês " > Nível de Inglês: </label >
+            1 <input  type =" range " min =" 0 " max =" 5 " id =" cInglês " name =" portugués " value =" 0 " > 5 <br >
+            
+            Escondido: (Veja no inspecionar)
+            <input  type =" hidden " value =" 7834349343947 " name =" escondido " >  <br >
+            
+            <label  for =" cTexto " > Conte um pouco sobre você: </label >  <br >
+            <textarea  required  rows =" 4 " cols =" 40 " placeholder =" Digite um texto " id =" cTexto " name =" texto " >
+                Texto inicial
+            </textarea >  <br >
+            
+            <label  for =" cEscolaridade " > Escolaridade: </label >
+            <select  name =" escolaridade " id obrigatório  =" cEscolaridade " >
+                <opção  desabilitada  selecionada > selecione uma opção </opção >
+                <opção > Ensino Fundamental Completo </opção >
+                <opção > Ensino Médio Completo </opção >
+                <opção > Ensino Seuperior Completo </opção >
+            </selecione >
+        </conjunto de campos >
+        
+        <!-- <input type="submit" value="Enviar"> submeter -->
+        <button  type =" submit " > Enviar </button >
+        <button  type =" button " > Não Faz Nada </button >
+        <button  type =" reset " > Reiniciar </button >
+    </forma>
+</body>
+</html>

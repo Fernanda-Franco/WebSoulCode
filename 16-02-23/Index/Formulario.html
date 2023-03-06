@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de Formulario</title>
+</head>
+<body>
+    <h3>Cadastro de perfil</h3>
+    <form><!--Form - container do formulario-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="cName">Nome:</label><!--label é para levar o usuario ao espaço de cx de texto ao clicar em Nome-->
+        <!--required significa que o campo é obrigatório ser preenchido-->
+        <!--size é o tamanho do campo / maxlenght é o max de caractere-->
+        <input required type="text" id="cName" name="nome" minlength="1" maxlength="70" size="30" placeholder="Digite aqui"><br><!--placeholder é o texto clarinho que fica dentro da cx de texto-->
+       
+        <label for="cSenha">Senha:</label>
+        <input 
+        required type="password" 
+        id="cSenha" 
+        name="senha"  
+        placeholder="Digite aqui"><br>
+        
+        <label for="cEmail">email:</label>
+        <input 
+        required type="email" 
+        id="cEmail" 
+        name="email" 
+        placeholder="Digite aqui"><br>
+        
+        <label for="cTel">Tel:</label>
+        <input 
+        required type="tel" 
+        id="cTel" 
+        name="telefone" 
+        placeholder="Digite aqui"><br>
+        
+        <label for="cInstagram">Instagram:</label>
+        <input 
+        required type="text" 
+        id="cInstagram"
+        name="instagran" 
+        placeholder="Digite aqui"><br>
+        
+        <label for="cNumero">Numero:</label>
+        <input 
+        required type="number" 
+        id="cNumero"
+        name="numero" 
+        min="0" 
+        max="110"><br>
+        
+        <label for="cDatadeNascimento">Data de Nascimento:</label>
+        <input 
+        required type="date" 
+        id="cDatadeNascimento"
+        name="DataNasc"><br>
+        
+        <label for="cHoradeNascimento">Hora de Nascimento:</label>
+        <input 
+        required type="time" 
+        id="cHoradeNascimento"
+        name="HoraNasc"><br>
+        
+        <label for="cDataeHora">Data e Hora de Nascimento:</label>
+        <input 
+        required type="datetime-local" 
+        id="cDataeHora"
+        name="DataHora"><br>
+        
+        <label for="cFoto">Foto de Perfil:</label>
+        <input 
+        type="file" 
+        ide="cFoto"
+        multiple
+        name="foto">.<br>
+        
+        <label for="cTermo">Termo de uso:</label>
+        <input 
+        required type="checkbox" 
+        id="cTermo"
+        name="Termo"><br> <!--caixa de assinalar-->
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Outros Dados</legend>
+            Interesses:
+        <label for="cHumanas">Humanas:</label>
+        <input 
+        name="interesse" 
+        id="cHumanas"
+        type="checkbox">
+
+        <label for="cExatas">Exatas:</label>
+        <input 
+        name="interesse" 
+        id="cExatas"
+        type="checkbox">
+        
+        <label for="cBiológicas">Biológicas:</label>
+        <input 
+        name="interesse" 
+        id="cBiológicas"
+        type="checkbox">
+        <br>
+        Escolha sua cor favorita:
+        <input required type="color" name="cor"><br>
+        
+        Sexo:
+        <!--checked: já deixa uma das caixas marcadas-->
+        Masculino<input name="sexo" type="radio" name="sexo"><!--Assinala apenas uma caixinha-->
+        Feminino<input name="sexo" type="radio" name="sexo" ><br>
+        
+        Nivel de ingles:<!--range: linha de preenchimento-->
+        1<input required type="range" name="ingles" min="0" max="5">5<br>
+        
+        Conte um pouco sobre você:<br>
+        <textarea cols="40" placeholder="Digite aqui"></textarea><br><!--cols: limita o tamanho da cx de texto-->
+        
+        Escolaridade
+        <select><!--tag que permite seleção-->
+            <option name="escolaridade"disabled selected>Escolha uma opção</option>
+            <option name="escolaridade">Ensino Medio</option><br>
+            <option name="escolaridade">Ensino Superior Copleto</option><br>
+            <option name="escolaridade">Ensino Fundamental</option><br>
+        <!--value: ja deixa a cx de texto preenchido com o texto que vc desejar-->    
+
+
+        </fieldset>        
+                </select>
+        <h3>Tipos de Botões</h3>
+        <button type="submit">Enviar</button>
+        <button type="Nada">Enviar</button> <!--não faz nada-->
+        <button type="Reinicia">Enviar</button> <!--Reiniciar-->
+
+
+
+
+    </form>
+    
+</body>
+</html>
